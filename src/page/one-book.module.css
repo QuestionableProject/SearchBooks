@@ -1,0 +1,57 @@
+.main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.block__image {
+    background: var(--color-grey);
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block__image img {
+    border-radius: 10px;
+    width: 30%;
+}
+
+.book__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 25px;
+}
+
+.book__info b {
+    font-size: 30px;
+}
+
+.description {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    padding: 20px;
+}
+
+.description p {
+    text-indent: 2em;
+}
+
+@media screen and (max-width: 1000px) {
+    .main section {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .block__image img {
+        border-radius: 10px;
+        width: 70%;
+    }
+}

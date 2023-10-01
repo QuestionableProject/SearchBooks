@@ -1,0 +1,73 @@
+.header {
+    width: 100%;
+    height: 100vh;
+    background: url('../../assets/preview.jpg') no-repeat;
+    background-size: cover;
+    color: var(--color-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    background: rgba(0, 0, 0, 0.500);
+}
+
+.blur h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.input__search {
+    display: flex;
+    background: var(--color-white);
+    border-radius: 10px;
+    padding: 5px 10px 5px 20px;
+}
+
+.input__search svg {
+    cursor: pointer;
+}
+
+.input__search input {
+    width: 500px;
+    height: 30px;
+}
+
+.filter label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.filter label input {
+    border-radius: 5px;
+}
+
+.filter {
+    display: flex;
+    gap: 20px;
+}
+
+.filter select {
+    width: 200px;
+    height: 30px;
+    outline: none;
+}
+
+@media screen and (max-width: 700px) {
+    .input__search input {
+        width: 200px;
+    }
+
+    .filter {
+        flex-direction: column;
+    }
+}

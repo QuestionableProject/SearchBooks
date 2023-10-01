@@ -1,0 +1,20 @@
+:root {
+    --color-white: white;
+    --color-black: rgb(0, 0, 0); 
+    --color-grey: rgba(212, 212, 212, 0.303);
+    --color-grey-two: rgba(179, 179, 179, 0.703);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: none;
+    border: 0;
+}
+li {
+    list-style: none;
+}
